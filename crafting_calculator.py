@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """Calculate required base resources for crafting in games."""
 
 import logging
