@@ -54,12 +54,12 @@ that you ask for with `--game`.
 Try writing your own recipes for your own games!
 
 - create a folder in `recipes/` (e.g. `nyancat`)
-- add a `meta.yml` file with information about the game (e.g. `cats_and_dogs_xi`)
+- add a `meta.yml` file with information about the game (e.g. `Cats and Dogs XI`)
     - mandatory keys: **title**
 - add at least one more file with recipes (e.g. `example.yml`, recipe: `yarn`)
     - mandatory keys per recipe: **name**, **items**
 - That's it!  
-  Try it: `./crafting_calculator.py --game cats_and_dogs_xi yarn`
+  Try it: `./crafting_calculator.py --game nyancat yarn`
 
 [YAML]: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
 
