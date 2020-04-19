@@ -95,16 +95,14 @@ Check the help for all available options:
 
 ### writing your own recipes
 Recipes are automatically loaded from [YAML][] files in the folder in `recipes/`
-that you ask for with `--game`. 
-Try writing your own recipes for your own games!
+that you ask for with `--game`. Try writing your own recipes for your own games!
 
 - create a folder in `recipes/` (e.g. `nyancat`)
 - add a `meta.yml` file with information about the game (e.g. `Cats and Dogs XI`)
     - mandatory keys: **title**
 - add at least one more file with recipes (e.g. `example.yml`, recipe: `yarn`)
     - mandatory keys per recipe: **name**, **items**
-- That's it!  
-  Try it: `./crafting_calculator.py --game nyancat yarn`
+- That's it! Try it: `./crafting_calculator.py --game nyancat yarn`
 
 [YAML]: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
 
@@ -112,10 +110,10 @@ If you want to contribue your recipes to the database, please have a look at
 the **General Style Guide** section.
 
 ## development
-- Code in this project is formatted with [black][], linted with [pylint][] and 
-  type hints are checked with [mypy][].
+- Code in this project is formatted with [black][], linted with [pylint][] as well as [yamllint][] and
+  type hints are checked with [mypy][]. Black, pylint and yamllint are run automatically via [pre-commit][].
 - Dependency tracking is done with [poetry][].
-- When releases will be available, they will follow [semantic versioning][] 
+- When releases will be available, they will follow [semantic versioning][]
   and have a [changelog][].
 
 [black]: https://github.com/psf/black
@@ -123,6 +121,18 @@ the **General Style Guide** section.
 [mypy]: https://github.com/python/mypy
 [semantic versioning]: https://semver.org/
 [changelog]: https://keepachangelog.com/
+[yamllint]: https://github.com/adrienverge/yamllint
+[pre-commit]: https://github.com/pre-commit/pre-commit
+
+To get started:
+
+```shell
+git clone git@github.com:GhostLyrics/crafting_calculator.git
+cd crafting_calculator
+pre-commit install
+poetry shell
+poetry install
+```
 
 ### general style guide
 - Keeping the recipes in files that are easy to scan simplifies maintenance.

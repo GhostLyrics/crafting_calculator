@@ -1,0 +1,46 @@
+---
+# pre-commit framework configuration
+# see: https://pre-commit.com
+
+default_stages:
+  - commit
+  - merge-commit
+  - manual
+
+repos:
+  # generic hooks to check pre-commit sanity
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+      - id: check-useless-excludes
+
+  # Official community hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.5.0
+    hooks:
+      - id: check-byte-order-marker
+      - id: check-case-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        exclude_types: [markdown]
+
+  - repo: https://github.com/PyCQA/pylint
+    rev: pylint-2.4.4
+    hooks:
+      - id: pylint
+        types: [python]
+        name: Check Python issues
+
+  - repo: https://github.com/psf/black
+    rev: 19.10b0
+    hooks:
+      - id: black
+        types: [python]
+        name: Blacken Python code
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.23.0
+    hooks:
+      - id: yamllint
+        types: [yaml]
+        name: Check YAML syntax
