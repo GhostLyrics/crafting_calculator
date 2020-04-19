@@ -24,21 +24,24 @@ repos:
       - id: trailing-whitespace
         exclude_types: [markdown]
 
-  - repo: https://github.com/PyCQA/pylint
-    rev: pylint-2.4.4
+  - repo: local
     hooks:
       - id: pylint
-        name: Check Python issues
+        entry: pylint
+        language: system
+        name: Check Python issues using Pylint
+        types: [python]
 
-  - repo: https://github.com/psf/black
-    rev: 19.10b0
-    hooks:
       - id: black
+        entry: black
+        language: system
         name: Blacken Python code
+        require_serial: true
+        types: [python]
 
-  - repo: https://github.com/adrienverge/yamllint
-    rev: v1.23.0
-    hooks:
       - id: yamllint
-        name: Check YAML syntax
         args: [--strict]
+        entry: yamllint
+        language: system
+        name: Check YAML syntax
+        types: [yaml]
