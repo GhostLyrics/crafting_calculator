@@ -68,13 +68,15 @@ If you want to contribue your recipes to the database, please have a look at
 the **General Style Guide** section.
 
 ## development
-- Code in this project is formatted with [black][], and linted with [pylint][].
+- Code in this project is formatted with [black][], linted with [pylint][] and 
+  type hints are checked with [mypy][].
 - Dependency tracking is done with [poetry][].
 - When releases will be available, they will follow [semantic versioning][] 
   and have a [changelog][].
 
 [black]: https://github.com/psf/black
 [pylint]: https://github.com/PyCQA/pylint
+[mypy: https://github.com/python/mypy
 [semantic versioning]: https://semver.org/
 [changelog]: https://keepachangelog.com/
 
