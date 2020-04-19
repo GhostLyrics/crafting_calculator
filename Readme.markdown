@@ -45,7 +45,7 @@ You can optionally craft more than one copy:
 
 ```shell
 ./crafting_calculator.py --game YOUR_GAME YOUR_ITEM --amount YOUR_AMOUNT
-# example: ./crafting_calculator.py --game yonder cobblestone 7
+# example: ./crafting_calculator.py --game yonder cobblestone --amount 7
 ```
 
 ### writing your own recipes
