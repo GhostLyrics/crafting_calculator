@@ -35,6 +35,15 @@ To calculate a shopping list for crafting, specify an item to craft:
 # example: ./crafting_calculator.py --game yonder cobblestone
 ```
 
+Result:
+
+```text
+You need these items to craft 1 of cobblestone:
+
+stick: 1
+stone: 5
+```
+
 Use quotes when you have an item that contains a space, an apostrophe, etc:
 
 ```shell
@@ -42,11 +51,31 @@ Use quotes when you have an item that contains a space, an apostrophe, etc:
 # example: ./crafting_calculator.py --game yonder "stone tiles"
 ```
 
+Result:
+
+```text
+You need these items to craft 1 of stone tiles:
+
+clay: 2
+fodder: 2
+stick: 6
+stone: 27
+```
+
 You can optionally craft more than one copy:
 
 ```shell
 ./crafting_calculator.py --game YOUR_GAME YOUR_ITEM --amount YOUR_AMOUNT
 # example: ./crafting_calculator.py --game yonder cobblestone --amount 7
+```
+
+Result:
+
+```text
+You need these items to craft 7 of cobblestone:
+
+stick: 7
+stone: 35
 ```
 
 ### writing your own recipes
@@ -76,7 +105,7 @@ the **General Style Guide** section.
 
 [black]: https://github.com/psf/black
 [pylint]: https://github.com/PyCQA/pylint
-[mypy: https://github.com/python/mypy
+[mypy]: https://github.com/python/mypy
 [semantic versioning]: https://semver.org/
 [changelog]: https://keepachangelog.com/
 
