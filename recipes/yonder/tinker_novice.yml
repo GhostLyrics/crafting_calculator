@@ -1,0 +1,90 @@
+---
+- name: butter churner
+  items:
+    tinker's kit: 1
+    gears: 1
+    cogs: 1
+    bits and bobs: 1
+    oil: 1
+    machine parts: 1
+    rivet: 1
+    leather: 1
+
+- name: cheese maker
+  items:
+    tinker's kit: 1
+    gears: 1
+    cogs: 1
+    bits and bobs: 1
+    oil: 1
+    machine parts: 1
+    glue: 1
+    plank: 1
+
+- name: cogs
+  items:
+    tinker's kit: 1
+    machine parts: 1
+    iron ingot: 2
+    bits and bobs: 1
+
+- name: fertilizer maker
+  items:
+    tinker's kit: 1
+    gears: 1
+    cogs: 1
+    bits and bobs: 1
+    oil: 1
+    machine parts: 1
+    clay: 1
+    coal: 1
+
+- name: firework display
+  items:
+    tinker's kit: 1
+    gears: 1
+    cogs: 1
+    bits and bobs: 1
+    oil: 1
+    machine parts: 1
+    stone arch: 1
+    stone tiles: 1
+
+- name: gears
+  items:
+    tinker's kit: 1
+    machine parts: 1
+    cogs: 1
+    bits and bobs: 1
+    oil: 1
+
+- name: machine parts
+  items:
+    silver ore: 1
+
+- name: seed maker
+  items:
+    tinker's kit: 1
+    gears: 1
+    cogs: 1
+    bits and bobs: 1
+    oil: 1
+    machine parts: 1
+    mortar: 1
+    keystone: 1
+
+- name: spinning wheel
+  items:
+    tinker's kit: 1
+    gears: 1
+    cogs: 1
+    bits and bobs: 1
+    oil: 1
+    machine parts: 1
+    wood: 1
+    nails: 1
+
+- name: tinker's kit
+  items:
+    clay: 1
+    wood: 1

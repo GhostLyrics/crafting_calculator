@@ -1,0 +1,67 @@
+---
+- name: carpenter's kit
+  items:
+    stick: 1
+    wood: 1
+
+- name: fodder trough
+  items:
+    carpenter's kit: 1
+    glue: 1
+    plank: 2
+    fodder: 4
+
+- name: glue
+  items:
+    celium flower: 1
+    water: 1
+
+- name: hedge fence
+  items:
+    carpenter's kit: 1
+    twine: 1
+    mystery seed: 3
+    stick: 1
+    glue: 2
+
+- name: large animal pen
+  items:
+    carpenter's kit: 1
+    nails: 2
+    wood beams: 2
+    wood tiles: 2
+    plank: 1
+
+- name: nails
+  items:
+    iron ore: 1
+
+- name: small animal pen
+  items:
+    carpenter's kit: 1
+    nails: 1
+    glue: 1
+    wood beams: 1
+    wood tiles: 1
+    plank: 3
+
+- name: water trough
+  items:
+    carpenter's kit: 1
+    glue: 1
+    plank: 2
+    wood tiles: 1
+    water: 3
+
+- name: wood beams
+  items:
+    carpenter's kit: 1
+    glue: 1
+    wood: 4
+
+- name: wood tiles
+  items:
+    carpenter's kit: 1
+    glue: 2
+    plank: 2
+    wood: 1

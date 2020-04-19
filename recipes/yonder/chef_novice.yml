@@ -1,0 +1,78 @@
+---
+- name: berry pie
+  items:
+    chef's kit: 1
+    dough: 1
+    flour: 1
+    red berry: 2
+    blue berry: 2
+    golden mint: 1
+
+- name: boiled egg
+  items:
+    chef's kit: 1
+    egg: 2
+    water: 2
+
+- name: bread
+  items:
+    chef's kit: 1
+    flour: 1
+    water: 1
+    oil: 1
+
+- name: chef's kit
+  items:
+    stone: 1
+    clay: 1
+
+- name: dippy egg with bread soldiers
+  items:
+    chef's kit: 1
+    boiled egg: 2
+    bread: 2
+    seasoning: 2
+
+- name: dough
+  items:
+    chef's kit: 1
+    flour: 1
+    butter: 1
+    water: 1
+    oil: 1
+    egg: 1
+    seasoning: 1
+
+- name: festival juice
+  items:
+    chef's kit: 1
+    water: 1
+    red berry: 1
+    blue berry: 1
+    golden mint: 1
+
+- name: fish and chips
+  items:
+    chef's kit: 1
+    cooked fish: 2
+    french fries: 2
+    oil: 2
+    seasoning: 1
+
+- name: french fries
+  items:
+    chef's kit: 1
+    potato: 1
+    oil: 2
+    seasoning: 2
+
+- name: oil
+  items:
+    dip fish: 2
+
+- name: seasoning
+  items:
+    chef's kit: 1
+    golden mint: 1
+    herbs: 3
+    oil: 1
