@@ -39,9 +39,11 @@ Result:
 
 ```text
 You need these items to craft 1 of cobblestone:
-
 stick: 1
 stone: 5
+
+The following intermediate items need to be crafted:
+constructor's kit: 1
 ```
 
 Use quotes when you have an item that contains a space, an apostrophe, etc:
@@ -55,11 +57,16 @@ Result:
 
 ```text
 You need these items to craft 1 of stone tiles:
-
 clay: 2
 fodder: 2
 stick: 6
 stone: 27
+
+The following intermediate items need to be crafted:
+cobblestone: 4
+constructor's kit: 6
+keystone: 1
+mortar: 2
 ```
 
 You can optionally craft more than one copy:
@@ -73,9 +80,17 @@ Result:
 
 ```text
 You need these items to craft 7 of cobblestone:
-
 stick: 7
 stone: 35
+
+The following intermediate items need to be crafted:
+constructor's kit: 7
+```
+
+Check the help for all available options:
+
+```shell
+./crafting_calculator.py --help
 ```
 
 ### writing your own recipes

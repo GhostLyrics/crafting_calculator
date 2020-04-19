@@ -18,8 +18,11 @@ EXITCODE_NO_RECIPES = 1
 class ShoppingList:
     """A shopping list holds all items required to craft the given item."""
 
-    def __init__(self, inventory: List[Dict[str, Any]]):
+    def __init__(self, inventory: List[Dict[str, Any]], item: str, amount: int):
         self.items: Dict[str, int] = {}
+        self.target_item: str = item
+        self.target_amount: int = amount
+        self.intermediate_steps: Dict[str, int] = {}
         self.inventory = inventory
 
     def add_items(self, items: Dict[str, int], amount: int) -> None:
@@ -27,6 +30,13 @@ class ShoppingList:
         for item in items:
             logging.debug("Adding %s to shopping list.", item)
             self.items.update({item: items[item] * amount})
+
+    def add_step(self, item: str, amount: int) -> None:
+        """Add intermediate items to the crafting tree."""
+        logging.debug("Adding %s of %s to crafting tree.", amount, item)
+        self.intermediate_steps.update(
+            {item: self.intermediate_steps.get(item, 0) + amount}
+        )
 
     def simplify(self) -> None:
         """Recursively replace intermediate crafted items with their components."""
@@ -48,15 +58,15 @@ class ShoppingList:
 
     def replace_items(self, item: str, replacement_items: Dict[str, int]) -> None:
         """Replace items in the shopping list with smaller components."""
-        amount_replaced_item = self.items[item]
+        amount_replaced_item = self.items.pop(item)
         logging.info("Replacing %s of %s.", amount_replaced_item, item)
-        self.items.pop(item)
         for replacement in replacement_items:
             amount_replacement = (
                 self.items.get(replacement, 0)
                 + replacement_items[replacement] * amount_replaced_item
             )
             self.items.update({replacement: amount_replacement})
+        self.add_step(item, amount_replaced_item)
 
     def to_yaml(self) -> str:
         """Return ShoppingList contents as YAML formatted string."""
@@ -68,7 +78,26 @@ class ShoppingList:
 
     def to_json(self) -> str:
         """Return ShoppingList contents as JSON formatted string."""
-        return dumps(self.items, sort_keys=True, indent=2)
+
+        output = {"shopping_list": self.items,
+                  "intermediates": self.intermediate_steps}
+        return dumps(output, sort_keys=True, indent=2)
+
+    def format_for_display(self) -> str:
+        """Format the ShoppingList for printing to stdout."""
+        message = "\n".join(
+            [
+                "",
+                f"You need these items to craft {self.target_amount} of {self.target_item}:",
+                safe_dump(self.items, default_flow_style=False, sort_keys=True),
+                "The following intermediate items need to be crafted:",
+                safe_dump(
+                    self.intermediate_steps, default_flow_style=False, sort_keys=True
+                ).rstrip("\n"),
+            ]
+        )
+
+        return message
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -193,7 +222,7 @@ def find_recipe(item: str, inventory: List[Dict[str, Any]]) -> Dict[str, int]:
 
 def craft_item(item: str, inventory: List[Dict[str, Any]], amount: int) -> ShoppingList:
     """Calculate the items required to craft a recipe."""
-    shopping_list = ShoppingList(inventory)
+    shopping_list = ShoppingList(inventory, item, amount)
     required_items = find_recipe(item, inventory)
     shopping_list.add_items(required_items, amount)
     shopping_list.simplify()
@@ -217,15 +246,7 @@ def main() -> None:
     if options.as_json:
         print(shopping_list.to_json())
     else:
-        message = (
-            "\n"
-            + "You need these items to craft {} of {}:".format(
-                options.amount, options.item
-            )
-            + "\n"
-        )
-        print(message)
-        print(shopping_list.to_yaml())
+        print(shopping_list.format_for_display())
 
 
 if __name__ == "__main__":
