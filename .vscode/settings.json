@@ -1,0 +1,12 @@
+{
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.mypyArgs": [
+        "--show-column-numbers",
+        "--strict"
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.pylintEnabled": true
+}

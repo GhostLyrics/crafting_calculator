@@ -1,0 +1,108 @@
+---
+# recipes are sorted alphabetically for easier manual scanning
+# recipes are lower case for consistency
+
+- name: cobblestone
+  items:
+    constructor's kit: 1
+    stone: 4
+
+- name: copper ingot
+  items:
+    constructor's kit: 1
+    lead ore: 1
+    copper ore: 2
+    coal: 2
+
+- name: constructor's kit
+  items:
+    stick: 1
+    stone: 1
+
+- name: iron ingot
+  items:
+    constructor's kit: 1
+    iron ore: 2
+    coal: 1
+
+- name: keystone
+  items:
+    constructor's kit: 1
+    mortar: 1
+    cobblestone: 3
+    stone: 2
+
+- name: lead ingot
+  items:
+    constructor's kit: 1
+    lead ore: 3
+    coal: 2
+
+- name: mortar
+  items:
+    clay: 1
+    fodder: 1
+
+- name: stone arch
+  items:
+    constructor's kit: 1
+    mortar: 2
+    cobblestone: 2
+    keystone: 1
+    stone: 2
+
+- name: stone fence
+  items:
+    constructor's kit: 1
+    cobblestone: 2
+    keystone: 1
+    stone: 2
+    mortar: 2
+
+- name: stone pillar
+  items:
+    constructor's kit: 1
+    mortar: 2
+    stone: 4
+    keystone: 1
+
+- name: stone tiles
+  items:
+    constructor's kit: 1
+    mortar: 1
+    keystone: 1
+    cobblestone: 1
+    stone: 3
+
+- name: sturdy fodder trough
+  items:
+    constructor's kit: 1
+    lead ingot: 3
+    iron ingot: 2
+    fodder: 2
+
+- name: sturdy large animal pen
+  items:
+    constructor's kit: 1
+    keystone: 1
+    stone arch: 2
+    stone pillar: 2
+    stone tiles: 1
+    mortar: 1
+
+- name: sturdy small animal pen
+  items:
+    constructor's kit: 1
+    keystone: 2
+    stone arch: 2
+    stone pillar: 1
+    stone tiles: 1
+    mortar: 1
+
+- name: sturdy water trough
+  items:
+    constructor's kit: 1
+    lead ingot: 1
+    copper ingot: 2
+    iron ingot: 2
+    water: 2
