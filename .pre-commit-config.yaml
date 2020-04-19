@@ -28,19 +28,17 @@ repos:
     rev: pylint-2.4.4
     hooks:
       - id: pylint
-        types: [python]
         name: Check Python issues
 
   - repo: https://github.com/psf/black
     rev: 19.10b0
     hooks:
       - id: black
-        types: [python]
         name: Blacken Python code
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.23.0
     hooks:
       - id: yamllint
-        types: [yaml]
         name: Check YAML syntax
+        args: [--strict]
