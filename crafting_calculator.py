@@ -27,7 +27,6 @@ class ShoppingList:
         for item in items:
             logging.debug("Adding %s to shopping list.", item)
             self.items.update({item: items[item] * amount})
-        # self.items.update(items)
 
     def simplify(self) -> None:
         """Recursively replace intermediate crafted items with their components."""
