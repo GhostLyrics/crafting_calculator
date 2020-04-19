@@ -17,12 +17,13 @@ a bit involved.*
 
 Currently this project is in alpha state and not packaged. To install:
 
-- ensure you have [poetry][] installed
+- ensure you have [Python3][] and [poetry][] installed
 - check out this repository
 - change into this repository
 - `poetry shell`
 - `poetry install`
 
+[Python3]: https://www.python.org/
 [poetry]: https://python-poetry.org/
 
 ## usage
