@@ -89,7 +89,7 @@ def load_recipes(game: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
     path = Path("recipes").joinpath(game)
     logging.info("Loading recipes from %s.", path)
 
-    for entry in path.rglob("*.yml"):
+    for entry in path.rglob("**/*.yml"):
         raw_content = entry.read_text()
         content = safe_load(raw_content)
 
