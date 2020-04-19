@@ -48,6 +48,24 @@ You can optionally craft more than one copy:
 # example: ./crafting_calculator.py --game yonder cobblestone 7
 ```
 
+### writing your own recipes
+Recipes are automatically loaded from [YAML][] files in the folder in `recipes/`
+that you ask for with `--game`. 
+Try writing your own recipes for your own games!
+
+- create a folder in `recipes/` (e.g. `nyancat`)
+- add a `meta.yml` file with information about the game (e.g. `cats_and_dogs_xi`)
+    - mandatory keys: **title**
+- add at least one more file with recipes (e.g. `example.yml`, recipe: `yarn`)
+    - mandatory keys per recipe: **name**, **items**
+- That's it!  
+  Try it: `./crafting_calculator.py --game cats_and_dogs_xi yarn`
+
+[YAML]: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+
+If you want to contribue your recipes to the database, please have a look at
+the **General Style Guide** section.
+
 ## development
 - Code in this project is formatted with [black][], and linted with [pylint][].
 - Dependency tracking is done with [poetry][].
@@ -58,6 +76,14 @@ You can optionally craft more than one copy:
 [pylint]: https://github.com/PyCQA/pylint
 [semantic versioning]: https://semver.org/
 [changelog]: https://keepachangelog.com/
+
+### general style guide
+- Keeping the recipes in files that are easy to scan simplifies maintenance.
+  For example, if a game has levels or sections, you could separate by those
+  (`carpenter_1_10.yml`, `smith_apprentice.yml`, etc.)
+- Keeping the recipe names in lowercase helps keep things simple.
+- Keeping the recipes sorted alphabetically in the recipe files makes it easier
+  to update things.
 
 ## thanks
 - Stephen Voss

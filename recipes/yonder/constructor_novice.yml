@@ -1,7 +1,4 @@
 ---
-# recipes are sorted alphabetically for easier manual scanning
-# recipes are lower case for consistency
-
 - name: cobblestone
   items:
     constructor's kit: 1
