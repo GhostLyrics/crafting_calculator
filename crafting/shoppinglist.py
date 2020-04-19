@@ -75,7 +75,12 @@ class ShoppingList:
     def to_json(self) -> str:
         """Return ShoppingList contents as JSON formatted string."""
 
-        output = {"shopping_list": self.items, "intermediates": self.intermediate_steps}
+        output = {
+            "shopping_list": self.items,
+            "intermediates": self.intermediate_steps,
+            "target_item": self.target_item,
+            "target_amount": self.target_amount,
+        }
         return dumps(output, sort_keys=True, indent=2)
 
     def format_for_display(self) -> str:
