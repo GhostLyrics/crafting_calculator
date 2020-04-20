@@ -1,0 +1,88 @@
+---
+- name: black dye
+  items:
+    brewer's kit: 1
+    clay pot: 1
+    coal: 2
+
+- name: black shampoo
+  items:
+    clay pot: 1
+    water: 1
+    black dye: 2
+
+- name: blond shampoo
+  items:
+    clay pot: 1
+    water: 1
+    yellow dye: 1
+    white dye: 1
+
+- name: blue dye
+  items:
+    brewer's kit: 1
+    clay pot: 1
+    celium flower: 1
+    blue berry: 1
+
+- name: blue firework
+  items:
+    brewer's kit: 1
+    clay pot: 1
+    coal: 1
+    celium seed: 1
+    blue dye: 2
+
+- name: brewer's kit
+  items:
+    vine: 1
+    stone: 1
+
+- name: red dye
+  items:
+    brewer's kit: 1
+    clay pot: 1
+    red berry: 1
+    lyabud flower: 1
+
+- name: red firework
+  items:
+    brewer's kit: 1
+    clay pot: 1
+    coal: 1
+    red berry: 1
+    red dye: 2
+
+- name: red shampoo
+  items:
+    clay pot: 1
+    water: 1
+    red dye: 2
+
+- name: white dye
+  items:
+    brewer's kit: 1
+    lyabud flower: 1
+    clay pot: 1
+    groffle milk: 1
+
+- name: yellow dye
+  items:
+    brewer's kit: 1
+    clay pot: 1
+    buttaberry flower: 1
+    ayva flower: 1
+
+- name: yellow firework
+  items:
+    brewer's kit: 1
+    coal: 1
+    ayva flower: 1
+    yellow dye: 2
+
+- name: yellow shampoo
+  items:
+    clay pot: 1
+    water: 1
+    yellow dye: 2
+    gold ingot: 1

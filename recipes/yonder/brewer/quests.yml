@@ -1,0 +1,8 @@
+---
+- name: fiery boom-water
+  items:
+    brewer's kit: 1
+    clay pot: 1
+    wood: 2
+    coal: 1
+    oil: 1

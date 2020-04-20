@@ -1,0 +1,135 @@
+---
+- name: basic tunic
+  items:
+    tailor's kit: 1
+    haberdashery: 1
+    silk: 1
+    cloth: 1
+    blue dye: 1
+    white dye: 1
+
+- name: canvas rucksack
+  items:
+    tailor's kit: 1
+    orange dye: 2
+    twine: 1
+    leather strips: 1
+    rivet: 1
+    lead ingot: 1
+    leather: 1
+
+- name: cardigan
+  items:
+    tailor's kit: 1
+    green dye: 2
+    haberdashery: 1
+    twine: 1
+    yarn: 3
+
+- name: fur-lined trousers
+  items:
+    tailor's kit: 1
+    yellow dye: 1
+    iron ingot: 1
+    fluff: 2
+    pelt: 1
+    cloth: 1
+    haberdashery: 1
+
+- name: haberdashery
+  items:
+    buttaberry flower: 1
+    lace fish: 1
+
+- name: leather haversack
+  items:
+    tailor's kit: 1
+    orange dye: 1
+    brown dye: 1
+    leather strips: 1
+    twine: 1
+    leather: 1
+    rivet: 1
+    haberdashery: 1
+
+- name: leather plackart
+  items:
+    tailor's kit: 1
+    brown dye: 1
+    green dye: 1
+    leather: 2
+    twine: 1
+    leather strips: 1
+    pelt: 1
+
+- name: leather strips
+  items:
+    tailor's kit: 1
+    pelt: 1
+
+- name: long trousers
+  items:
+    tailor's kit: 1
+    brown dye: 1
+    leather strips: 1
+    silk: 1
+    cloth: 1
+    rivet: 1
+    haberdashery: 1
+
+- name: long-sleeve wrap
+  items:
+    tailor's kit: 1
+    green dye: 1
+    yellow dye: 1
+    leather: 1
+    twine: 1
+    silk: 1
+    cloth: 1
+    haberdashery: 1
+
+- name: raincoat
+  items:
+    tailor's kit: 1
+    yellow dye: 1
+    twine: 1
+    oil: 2
+    silk: 1
+    cloth: 1
+    haberdashery: 1
+
+- name: rivet
+  items:
+    copper ore: 1
+    stick: 1
+
+- name: tailor's kit
+  items:
+    twine: 1
+    wood: 1
+
+- name: tied dimije
+  items:
+    tailor's kit: 1
+    blue dye: 1
+    brown dye: 1
+    twine: 1
+    silk: 1
+    cloth: 1
+    haberdashery: 1
+
+- name: traveler slacks
+  items:
+    tailor's kit: 1
+    brown dye: 1
+    orange dye: 1
+    twine: 1
+    leather: 1
+    pelt: 1
+    cloth: 1
+    haberdashery: 1
+
+- name: yarn
+  items:
+    tailor's kit: 1
+    fluff: 2

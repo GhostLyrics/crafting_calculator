@@ -1,0 +1,11 @@
+---
+- name: ghost fish stew
+  items:
+    ghost fish: 1
+    mushroom: 1
+    water: 1
+
+- name: trap
+  items:
+    twine: 1
+    bundle of sticks: 2
