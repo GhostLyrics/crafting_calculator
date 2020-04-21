@@ -1,0 +1,32 @@
+---
+- name: cooked fish
+  items:
+    fish (any): 1
+    coal: 1
+
+- name: cooked meat
+  items:
+    meat: 1
+    coal: 1
+
+- name: traveler's knot
+  items:
+    vine: 2
+    stone: 1
+
+- name: twine
+  items:
+    vine: 2
+
+- name: twine
+  items:
+    fodder: 8
+
+- name: warm milk
+  items:
+    coal: 1
+    groffle milk: 1
+
+- name: water
+  items:
+    vine: 2

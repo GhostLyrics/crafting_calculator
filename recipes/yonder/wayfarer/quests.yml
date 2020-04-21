@@ -1,4 +1,14 @@
 ---
+- name: bundle of sticks
+  items:
+    vine: 1
+    stick: 3
+
+- name: celium seed
+  items:
+    celium flower: 1
+    stone: 1
+
 - name: ghost fish stew
   items:
     ghost fish: 1

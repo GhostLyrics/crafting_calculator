@@ -1,0 +1,76 @@
+---
+- name: blacksmith's apron
+  items:
+    constructor's kit: 1
+    tailor's kit: 1
+    leather: 1
+    hide: 1
+    pelt: 1
+    leather strips: 1
+    rivet: 1
+
+- name: blacksmith's tails
+  items:
+    constructor's kit: 1
+    tailor's kit: 1
+    silk: 1
+    cloth: 1
+    hide: 1
+    leather: 1
+    haberdashery: 1
+
+- name: gold ingot
+  items:
+    constructor's kit: 1
+    lead ore: 1
+    gold ore: 2
+    coal: 2
+
+- name: planter box
+  items:
+    constructor's kit: 1
+    clay: 3
+    copper ingot: 1
+    iron ingot: 1
+    lead ingot: 1
+    mortar: 1
+
+- name: rail fence
+  items:
+    constructor's kit: 1
+    cobblestone: 2
+    keystone: 1
+    lead ingot: 1
+    iron ingot: 1
+    mortar: 2
+
+- name: silver ingot
+  items:
+    constructor's kit: 1
+    lead ore: 1
+    silver ore: 2
+    coal: 2
+
+- name: small tree planter
+  items:
+    constructor's kit: 1
+    lead ingot: 2
+    iron ingot: 2
+    copper ingot: 2
+    mortar: 1
+
+- name: stone garden plot
+  items:
+    constructor's kit: 1
+    stone: 2
+    cobblestone: 2
+    keystone: 1
+    mortar: 1
+
+- name: stone tree plot
+  items:
+    constructor's kit: 1
+    stone: 2
+    cobblestone: 2
+    keystone: 1
+    mortar: 2
