@@ -1,0 +1,12 @@
+---
+- name: Silver Ingot
+  items:
+    Silver Mineral: 3
+
+- name: Gold Ingot
+  items:
+    Gold Mineral: 3
+
+- name: Platinum Ingot
+  items:
+    Platinum Mineral: 3

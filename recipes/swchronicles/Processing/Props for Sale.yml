@@ -1,0 +1,38 @@
+---
+- name: Shiny Dice
+  items:
+    Zircon: 8
+    Iron Ingot: 8
+
+- name: Ruby Brooch
+  items:
+    Ruby: 15
+    Silver Ingot: 12
+
+- name: Chess Piece
+  items:
+    Gold Ingot: 10
+    Aquamarine: 10
+    Cobalt Ingot: 5
+    Handwork Craft Tool: 2
+
+- name: Shiny Feather
+  items:
+    Emerald: 10
+    Peridot: 8
+    Fluorite: 5
+    Handwork Craft Tool: 3
+
+- name: Colorful Sea Dragon
+  items:
+    Sapphire: 10
+    Aquamarine: 10
+    Obsidian: 6
+    Premium Handwork Craft Tool: 3
+
+- name: Flame Peacock
+  items:
+    Red Diamond: 20
+    Ruby: 12
+    Topaz: 8
+    Premium Handwork Craft Tool: 5

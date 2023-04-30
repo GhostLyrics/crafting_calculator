@@ -1,0 +1,12 @@
+---
+- name: Handwork Craft Tool
+  items:
+    Zircon: 2
+    Thin String: 8
+    Normal Lumber: 2
+
+- name: Premium Handwork Craft Tool
+  items:
+    Emerald: 3
+    Normal String: 2
+    Normal Lumber: 3

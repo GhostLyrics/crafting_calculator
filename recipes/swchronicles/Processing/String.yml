@@ -1,0 +1,9 @@
+---
+- name: Thin String
+  items:
+    Leaf: 3
+
+- name: Normal String
+  items:
+    Tough Leaf: 1
+    Leaf: 3

@@ -1,0 +1,14 @@
+---
+- name: Thin Lumber
+  items:
+    Branch: 3
+
+- name: Normal Lumber
+  items:
+    Sturdy Tree Trunk: 1
+    Branch: 3
+
+- name: Solid Lumber
+  items:
+    Sturdy Tree Trunk: 3
+    Branch: 5

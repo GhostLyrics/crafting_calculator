@@ -1,0 +1,12 @@
+---
+- name: Opal
+  items:
+    Opal Ore: 3
+
+- name: Aquamarine
+  items:
+    Aquamarine Ore: 3
+
+- name: Sapphire
+  items:
+    Sapphire Ore: 3

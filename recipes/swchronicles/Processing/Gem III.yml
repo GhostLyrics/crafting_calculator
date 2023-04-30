@@ -1,0 +1,12 @@
+---
+- name: Zircon
+  items:
+    Zircon Ore: 3
+
+- name: Peridot
+  items:
+    Peridot Ore: 3
+
+- name: Emerald
+  items:
+    Emerald Ore: 3
