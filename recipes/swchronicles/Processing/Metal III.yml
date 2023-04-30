@@ -1,0 +1,16 @@
+---
+- name: Cobalt Ingot
+  items:
+    Cobalt Mineral: 3
+
+- name: Fluorite Ingot
+  items:
+    Fluorite Mineral: 3
+
+- name: Obsidian
+  items:
+    Obsidian Mineral: 3
+
+- name: Tritium
+  items:
+    Tritium Mineral: 3

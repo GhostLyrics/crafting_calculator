@@ -1,0 +1,12 @@
+---
+- name: Iron Ingot
+  items:
+    Iron Mineral: 3
+
+- name: Mythril Ingot
+  items:
+    Mythril Mineral: 3
+
+- name: Adamantium Ingot
+  items:
+    Adamantium Mineral: 3

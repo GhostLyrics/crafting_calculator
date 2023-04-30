@@ -1,0 +1,12 @@
+---
+- name: Garnet
+  items:
+    Garnet Ore: 3
+
+- name: Ruby
+  items:
+    Ruby Ore: 3
+
+- name: Red Diamond
+  items:
+    Red Diamond Ore: 3
