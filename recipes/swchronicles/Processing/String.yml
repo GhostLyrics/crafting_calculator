@@ -1,9 +1,11 @@
 ---
 - name: Thin String
+  cost: 500
   items:
     Leaf: 3
 
 - name: Normal String
+  cost: 1500  
   items:
     Tough Leaf: 1
     Leaf: 3

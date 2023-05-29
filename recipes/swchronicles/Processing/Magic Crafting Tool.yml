@@ -1,0 +1,14 @@
+---
+- name: Magic Craft Tool
+  cost: 7500
+  items:
+    Sapphire: 3
+    Tough Leaf: 1
+    Solid Lumber: 3
+
+- name: Magic Craft Tool 2
+  cost: 7500
+  items:
+    Amber: 1
+    Mandragora Root: 1
+    Solid Lumber: 3

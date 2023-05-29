@@ -1,0 +1,32 @@
+---
+- name: Red Handwork Gem (Low)
+  cost: 3000
+  items:
+    Garnet: 3
+
+- name: Red Handwork Gem (Mid)
+  cost: 5000
+  items:
+    Ruby: 12
+
+- name: Red Handwork Gem (High)
+  cost: 12000
+  items:
+    Red Diamond: 15
+    Garnet: 20
+    Handwork Craft Tool: 5
+
+- name: Red Handwork Gem (Supreme)
+  cost: 20000
+  items:
+    Red Diamond: 90
+    Ruby: 30
+    Premium Handwork Craft Tool: 15
+
+- name: Red Handwork Gem (Ultimate)
+  cost: 50000
+  items:
+    Red Diamond: 300
+    Ruby: 300
+    Topaz: 100
+    Premium Handwork Craft Tool: 60

@@ -1,0 +1,12 @@
+---
+- name: Potion Craft Tool
+  cost: 200
+  items:
+    Silver Ingot: 1
+    Thin Lumber: 1
+
+- name: Premium Potion Craft Tool
+  cost: 500
+  items:
+    Platinum Ingot: 1
+    Thin Lumber: 1

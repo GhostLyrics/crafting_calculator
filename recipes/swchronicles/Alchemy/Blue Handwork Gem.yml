@@ -1,0 +1,32 @@
+---
+- name: Blue Handwork Gem (Low)
+  cost: 3000
+  items:
+    Opal: 3
+
+- name: Blue Handwork Gem (Mid)
+  cost: 5000
+  items:
+    Aquamarine: 12
+
+- name: Blue Handwork Gem (High)
+  cost: 12000
+  items:
+    Sapphire: 15
+    Opal: 20
+    Handwork Craft Tool: 5
+
+- name: Blue Handwork Gem (Supreme)
+  cost: 20000
+  items:
+    Sapphire: 90
+    Aquamarine: 30
+    Premium Handwork Craft Tool: 15
+
+- name: Blue Handwork Gem (Ultimate)
+  cost: 50000
+  items:
+    Sapphire: 300
+    Aquamarine: 300
+    Topaz: 100
+    Premium Handwork Craft Tool: 60

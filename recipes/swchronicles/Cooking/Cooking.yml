@@ -1,0 +1,111 @@
+---
+- name: Fried Meat
+  cost: 10000
+  items:
+    Beef: 8
+    Lamb: 8
+    Finest Flour: 3
+    Olive Oil: 5
+
+- name: Finest Flour
+  cost: 500
+  items:
+    Saffron Petal: 30
+    Eternal Leaf: 6
+    Flour: 30
+
+- name: Finest Salt
+  cost: 500
+  items:
+    Chamomile Bud: 5
+    4-Leaf Clover: 1
+    Salt: 5
+
+- name: Finest Sugar
+  cost: 500
+  items:
+    Apple: 5
+    Sweet Apple: 1
+    Sugar: 5
+
+- name: Premium Flour
+  cost: 250
+  items:
+    Lavender Stem: 5
+    Flour: 3
+
+- name: Premium Salt
+  cost: 250
+  items:
+    Basil Leaf: 5
+    Salt: 3
+
+- name: Premium Sugar
+  cost: 250
+  items:
+    Mango: 5
+    Sugar: 3
+
+- name: Premium Swallowtail Dart
+  cost: 10000
+  items:
+    Sage Leaf: 6
+    Swallowtail Dart: 4
+    Premium All-purpose Ingredient: 2
+    Finest Salt: 2
+
+- name: Premium All-purpose Ingredient
+  cost: 5000
+  items:
+    Sage Leaf: 3
+    Beef: 1
+    Blowfish: 1
+
+- name: Premium All-purpose Ingredient 2
+  cost: 5000
+  items:
+    Beef: 1
+    Avocado: 1
+
+- name: Crab Gimbap
+  cost: 10000
+  items:
+    Crab: 6
+    Chicken: 5
+    Premium All-purpose Ingredient: 2
+    Finest Flour: 3
+
+- name: Chamomile Pho recipe
+  cost: 10000
+  items:
+    Chamomile Bud: 10
+    4-Leaf Clover: 3
+    Premium All-purpose Ingredient: 2
+    Finest Flour: 2
+
+- name: Mango Sorbet
+  cost: 10000
+  items:
+    Ice Mango: 8
+    Unmelted Ice: 5
+    Finest Sugar: 3
+
+- name: Strawberry Pie
+  cost: 5000
+  items:
+    Strawberry: 12
+    Premium Flour: 5
+    Premium Sugar: 3
+
+- name: Strawberry Parfait
+  cost: 10000
+  items:
+    Strawberry: 8
+    Unmelted Ice: 2
+    Finest Sugar: 2
+
+- name: Grilled Calm Mackerel
+  cost: 5000
+  items:
+    Calm Mackerel: 5
+    Premium Salt: 3

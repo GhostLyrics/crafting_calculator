@@ -1,12 +1,15 @@
 ---
 - name: Silver Ingot
+  cost: 500
   items:
     Silver Mineral: 3
 
 - name: Gold Ingot
+  cost: 1000
   items:
     Gold Mineral: 3
 
 - name: Platinum Ingot
+  cost: 1500
   items:
     Platinum Mineral: 3

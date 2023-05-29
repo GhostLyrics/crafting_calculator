@@ -1,12 +1,15 @@
 ---
 - name: Garnet
+  cost: 500
   items:
     Garnet Ore: 3
 
 - name: Ruby
+  cost: 1000
   items:
     Ruby Ore: 3
 
 - name: Red Diamond
+  cost: 1500
   items:
     Red Diamond Ore: 3

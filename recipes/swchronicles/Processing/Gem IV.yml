@@ -1,4 +1,10 @@
 ---
+- name: Amber
+  cost: 1500
+  items:
+    Amber Ore: 3
+
 - name: Topaz
+  cost: 5000
   items:
     Topaz Ore: 3

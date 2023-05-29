@@ -1,0 +1,26 @@
+---
+- name: Rough Yarn Ball
+  cost: 1500
+  items:
+    Basil Leaf: 2
+    Branch: 2
+    4-Leaf Clover: 1
+
+- name: Useful Yarn Ball
+  cost: 2000
+  items:
+    Saffron Petal: 6
+    Branch: 6
+    4-Leaf Clover: 2
+
+- name: Yarn Ball
+  cost: 2500
+  items:
+    Sage Leaf: 12
+    Branch: 12
+    4-Leaf Clover: 2
+
+- name: Altered Leather
+  cost: 10000
+  items:
+    Tough Leather: 20

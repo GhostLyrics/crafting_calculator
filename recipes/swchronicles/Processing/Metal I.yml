@@ -1,12 +1,15 @@
 ---
 - name: Iron Ingot
+  cost: 500
   items:
     Iron Mineral: 3
 
-- name: Mythril Ingot
+- name: Mithril Ingot
+  cost: 1000
   items:
-    Mythril Mineral: 3
+    Mithril Mineral: 3
 
 - name: Adamantium Ingot
+  cost: 1500
   items:
     Adamantium Mineral: 3

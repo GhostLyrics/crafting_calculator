@@ -1,12 +1,15 @@
 ---
 - name: Opal
+  cost: 500
   items:
     Opal Ore: 3
 
 - name: Aquamarine
+  cost: 1000
   items:
     Aquamarine Ore: 3
 
 - name: Sapphire
+  cost: 1500
   items:
     Sapphire Ore: 3

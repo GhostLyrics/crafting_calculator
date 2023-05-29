@@ -53,7 +53,7 @@ def window1():
         [sg.Multiline(size=(49, 20), key='output', enable_events=True)],
         [sg.Button('Calculate', key='calculate'), sg.Button('Cancel')]
     ]
-    return sg.Window('Crafting Calculator', layout, finalize=True)
+    return sg.Window('Crafting Calculator', layout, resizable=True)
 
 def main():
     #dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -65,7 +65,7 @@ def main():
         event, values = window.read()
 
         outputElement = window['output']
-
+        
         if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
             break
 
@@ -84,7 +84,7 @@ def main():
                 amount = int(values['amount'] or 1)
                 output(outputElement, '')
                 for i in item:
-                    cmd = Template('python crafting_calculator.py --game "$game" "$item" --amount $amount')
+                    cmd = Template('python crafting_calculator.py --game "$game" "$item" --amount $amount --debug')
                     cmdSubstituted = cmd.substitute(game=game, item=i, amount=amount)
                     result = subprocess.check_output(cmdSubstituted, text=True)
                     output(outputElement, result+'\n', True)

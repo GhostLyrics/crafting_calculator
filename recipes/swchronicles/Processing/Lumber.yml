@@ -1,14 +1,17 @@
 ---
 - name: Thin Lumber
+  cost: 500
   items:
     Branch: 3
 
 - name: Normal Lumber
+  cost: 1500
   items:
     Sturdy Tree Trunk: 1
     Branch: 3
 
 - name: Solid Lumber
+  cost: 5000
   items:
     Sturdy Tree Trunk: 3
     Branch: 5

@@ -1,16 +1,24 @@
 ---
 - name: Cobalt Ingot
+  cost: 3000
+  sell_to_vendor: 60
   items:
     Cobalt Mineral: 3
 
 - name: Fluorite Ingot
+  cost: 4000
+  sell_to_vendor: 75
   items:
     Fluorite Mineral: 3
 
 - name: Obsidian
+  cost: 5000
+  sell_to_vendor: 100
   items:
     Obsidian Mineral: 3
 
 - name: Tritium
+  cost: 5000
+  sell_to_vendor: 100
   items:
     Tritium Mineral: 3
