@@ -16,7 +16,6 @@ from crafting_calculator import load_recipes
 
 def discover_games() -> Tuple[Dict[str, Any]]:
     games = []
-    meta = {"title": "unknown game (meta data incomplete)"}
     path = Path("recipes")
     for entry in path.rglob("**/meta.yml"):
         raw_content = entry.read_text()
