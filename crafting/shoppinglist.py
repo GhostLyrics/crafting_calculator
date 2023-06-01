@@ -9,6 +9,7 @@ from yaml import safe_dump
 
 # internal
 from crafting.common import find_recipe
+from crafting.common import get_recipe_cost
 
 
 class ShoppingList:
@@ -16,6 +17,8 @@ class ShoppingList:
 
     def __init__(self, inventory: List[Dict[str, Any]], item: str, amount: int):
         self.items: Dict[str, int] = {}
+        self.cost: Dict[str, float] = {}
+        self.sell_to_vendor: float = None
         self.target_item: str = item
         self.target_amount: int = amount
         self.intermediate_steps: Dict[str, int] = {}
@@ -26,6 +29,18 @@ class ShoppingList:
         for item in items:
             logging.debug("Adding %s to shopping list.", item)
             self.items.update({item: items[item] * amount})
+
+    def add_item_costs(self, items: Dict[str, float]) -> None:
+        """Add items to the shopping list."""
+        cost = None
+        for item in items:
+            recipe_cost = get_recipe_cost(item, self.inventory)
+            if recipe_cost is not None:
+                self.cost.update({item: items[item] * recipe_cost})
+
+            logging.debug("Summing item costs for %s item in shopping list.", item)
+
+        return cost
 
     def add_step(self, item: str, amount: int) -> None:
         """Add intermediate items to the crafting tree."""
@@ -85,6 +100,8 @@ class ShoppingList:
 
     def format_for_display(self) -> str:
         """Format the ShoppingList for printing to stdout."""
+        total_cost = sum(self.cost.values())
+        total_cost_formatted = f"{total_cost:,}"
         message = "\n".join(
             [
                 "",
@@ -94,7 +111,18 @@ class ShoppingList:
                 safe_dump(
                     self.intermediate_steps, default_flow_style=False, sort_keys=True
                 ).rstrip("\n"),
+                "",
+                f"It will cost a total of {total_cost_formatted} to craft the intermediate items:",
+                safe_dump(self.cost, default_flow_style=False, sort_keys=True),
             ]
         )
+        if self.sell_to_vendor is not None:
+            sell_to_vendor_formatted = f"{self.sell_to_vendor:,}"
+            message += (
+                "\n"
+                + self.target_item
+                + " sells to a vendor for: "
+                + sell_to_vendor_formatted
+            )
 
         return message

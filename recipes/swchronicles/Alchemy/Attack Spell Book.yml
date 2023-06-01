@@ -1,0 +1,38 @@
+---
+- name: Spell Book I ATK
+  cost: 3000
+  items:
+    Faint Magic Core: 1
+    Leaf: 1
+
+- name: Spell Book II ATK
+  cost: 5000
+  items:
+    Faint Magic Core: 3
+    Tough Leaf: 5
+
+- name: Spell Book III ATK
+  sell_to_vendor: 1000
+  cost: 12000
+  items:
+    Magic Core: 5
+    Faint Magic Core: 30
+    Flame Heart: 1
+    Magic Craft Tool: 3
+
+- name: Spell Book IV ATK
+  sell_to_vendor: 7000
+  cost: 20000
+  items:
+    Powerful Magic Core: 5
+    Magic Core: 25
+    Fire Spirit Heart: 1
+    Magic Craft Tool: 25
+
+- name: Spell Book V ATK
+  cost: 50000
+  items:
+    Legendary Magic Core: 25
+    Powerful Core: 60
+    Incarnation Heart: 1
+    Magic Craft Tool: 100

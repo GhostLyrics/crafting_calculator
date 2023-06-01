@@ -144,3 +144,15 @@ poetry install
 
 ## thanks
 - Stephen Voss
+
+
+# crafting_calculator_gui.py
+
+This is a simple GUI wrapper around crafting_calculator.py that uses [PySimpleGUI](https://www.pysimplegui.org/en/latest/)
+
+## usage
+
+```shell
+python crafting_calculator_gui.py
+```
+<img src="./images/gui.png">

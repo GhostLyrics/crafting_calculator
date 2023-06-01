@@ -1,0 +1,14 @@
+---
+- name: Handwork Craft Tool
+  cost: 2500
+  items:
+    Zircon: 2
+    Thin String: 8
+    Normal Lumber: 2
+
+- name: Premium Handwork Craft Tool
+  cost: 5000
+  items:
+    Emerald: 3
+    Normal String: 2
+    Normal Lumber: 3

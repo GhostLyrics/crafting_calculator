@@ -1,0 +1,15 @@
+---
+- name: Zircon
+  cost: 1000
+  items:
+    Zircon Ore: 3
+
+- name: Peridot
+  cost: 3000
+  items:
+    Peridot Ore: 3
+
+- name: Emerald
+  cost: 1500
+  items:
+    Emerald Ore: 3

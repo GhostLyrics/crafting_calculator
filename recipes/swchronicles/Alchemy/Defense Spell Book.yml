@@ -1,0 +1,36 @@
+---
+- name: Spell Book I DEF
+  cost: 3000
+  items:
+    Faint Magic Core: 1
+    Leaf: 1
+
+- name: Spell Book II DEF
+  cost: 5000
+  items:
+    Faint Magic Core: 3
+    Tough Leaf: 5
+
+- name: Spell Book III DEF
+  cost: 12000
+  items:
+    Magic Core: 5
+    Faint Magic Core: 30
+    Earth Breath: 1
+    Magic Craft Tool: 3
+
+- name: Spell Book IV DEF
+  cost: 20000
+  items:
+    Powerful Magic Core: 5
+    Magic Core: 25
+    Earth Wrath: 1
+    Magic Craft Tool: 25
+
+- name: Spell Book V DEF
+  cost: 50000
+  items:
+    Legendary Magic Core: 25
+    Powerful Core: 60
+    Earth Soul: 1
+    Magic Craft Tool: 100

@@ -1,0 +1,32 @@
+---
+- name: Green Handwork Gem (Low)
+  cost: 3000
+  items:
+    Zircon: 3
+
+- name: Green Handwork Gem (Mid)
+  cost: 5000
+  items:
+    Peridot: 5
+
+- name: Green Handwork Gem (High)
+  cost: 12000
+  items:
+    Emerald: 15
+    Zircon: 15
+    Handwork Craft Tool: 5
+
+- name: Green Handwork Gem (Supreme)
+  cost: 20000
+  items:
+    Emerald: 90
+    Peridot: 10
+    Premium Handwork Craft Tool: 15
+
+- name: Green Handwork Gem (Ultimate)
+  cost: 50000
+  items:
+    Emerald: 300
+    Peridot: 100
+    Topaz: 100
+    Premium Handwork Craft Tool: 60
