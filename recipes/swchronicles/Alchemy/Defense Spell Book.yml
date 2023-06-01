@@ -30,7 +30,7 @@
 - name: Spell Book V DEF
   cost: 50000
   items:
-    Legendary Magic Core: 25  
+    Legendary Magic Core: 25
     Powerful Core: 60
     Earth Soul: 1
     Magic Craft Tool: 100

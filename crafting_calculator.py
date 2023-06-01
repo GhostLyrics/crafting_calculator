@@ -17,6 +17,7 @@ from crafting.common import get_recipe_cost
 
 EXITCODE_NO_RECIPES = 1
 
+
 def parse_arguments() -> argparse.Namespace:
     """Parse given command line arguments."""
     parser = argparse.ArgumentParser(
@@ -128,9 +129,9 @@ def craft_item(item: str, inventory: List[Dict[str, Any]], amount: int) -> Shopp
     shopping_list.cost.update({item: get_recipe_cost(item, inventory) * amount})
     for recipe in inventory:
         if recipe.get("name") == item:
-            if 'sell_to_vendor' in recipe.keys():
+            if "sell_to_vendor" in recipe.keys():
                 shopping_list.sell_to_vendor = recipe.get("sell_to_vendor")
-                
+
             else:
                 logging.warning("No sell_to_vendor property for %s.", item)
 

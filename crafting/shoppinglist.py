@@ -11,6 +11,7 @@ from yaml import safe_dump
 from crafting.common import find_recipe
 from crafting.common import get_recipe_cost
 
+
 class ShoppingList:
     """A shopping list holds all items required to craft the given item."""
 
@@ -36,9 +37,9 @@ class ShoppingList:
             recipe_cost = get_recipe_cost(item, self.inventory)
             if recipe_cost is not None:
                 self.cost.update({item: items[item] * recipe_cost})
-                                
+
             logging.debug("Summing item costs for %s item in shopping list.", item)
-            
+
         return cost
 
     def add_step(self, item: str, amount: int) -> None:
@@ -100,7 +101,7 @@ class ShoppingList:
     def format_for_display(self) -> str:
         """Format the ShoppingList for printing to stdout."""
         total_cost = sum(self.cost.values())
-        total_cost_formatted = f'{total_cost:,}'
+        total_cost_formatted = f"{total_cost:,}"
         message = "\n".join(
             [
                 "",
@@ -116,7 +117,12 @@ class ShoppingList:
             ]
         )
         if self.sell_to_vendor is not None:
-            sell_to_vendor_formatted = f'{self.sell_to_vendor:,}'
-            message += "\n"+self.target_item+" sells to a vendor for: "+sell_to_vendor_formatted
+            sell_to_vendor_formatted = f"{self.sell_to_vendor:,}"
+            message += (
+                "\n"
+                + self.target_item
+                + " sells to a vendor for: "
+                + sell_to_vendor_formatted
+            )
 
         return message

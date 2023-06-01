@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .product-name-quantity-wrapper,
+            .in-inventory-wrapper {
+                display: inline-block;
+            }
+
+            .product-name-quantity-wrapper {
+                min-width: 250px;
+                margin-right: 100px;
+            }
+
+            .quantity-base-label {
+                display: none;
+            }
+
+            .quantity-required {
+                float: right;
+            }
+
+            .accordion-wrapper.level-0 {
+                margin-bottom: 15px;
+            }
+
+            .accordion--root {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .accordion--child {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                padding: 0;
+            }
+
+            .active, .accordion:hover {
+                background-color: #ccc;
+            }
+
+            .accordion--root::before,
+            .accordion--child::before {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                margin-right: 5px;
+            }
+
+            .active::before {
+                content: "\2212";
+            }
+
+            .panel {
+                padding-left: 30px;
+                background-color: white;
+            }
+        </style>
+    </head>
+</head>
+<body>
+    <h1>Crafting Calculator GUI</h1>
+    <input type="checkbox" id="hideInventoryCheckbox">
+    <label for="hideInventoryCheckbox">Hide Inventory</label>
+    <div class="accordion-wrapper level-0">
+        <button class="accordion--root">Alchemy</button>
+        <div class="panel">
+            <div class="block">
+                <label>Simple label</label>
+                <input type="text" size="4" />
+            </div>
+            <div class="block">
+                <label>Label with more text</label>
+                <input type="text" size="4" />
+            </div>
+            <div class="block">
+                <label>Short</label>
+                <input type="text" size="4" />
+            </div>
+        </div>
+    </div>
+    <div class="accordion-wrapper level-0">
+        <button class="accordion--root">Blacksmithing</button>
+        <div class="panel">
+            <div class="block"><label>Simple label</label><input type="text" size="4" /></div>
+            <div class="block">
+                <label>Label with more text</label>
+                <input type="text" size="4" />
+            </div>
+            <div class="block">
+                <label>Short</label>
+                <input type="text" size="4" />
+            </div>
+        </div>
+    </div>
+    <div class="accordion-wrapper level-0">
+        <button class="accordion--root">Cooking</button>
+        <div class="panel">
+            <div class="accordion-wrapper level-0">
+                <div class="accordion-wrapper level-1">
+                    <div class="product">
+                        <div class="product-name-quantity-wrapper">
+                            <button class="accordion--child item-name">Crab Gimbap</button>
+                            <input class="quantity-required" type="text" size="4" />
+                        </div>
+                        <div class="in-inventory-wrapper">
+                            <label>In inventory: </label><input class="in-inventory" type="text" size="4" />
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="product">
+                            <div class="product-name-quantity-wrapper">
+                                <label class="item-name">Crab</label>
+                                <label data-base-quantity="6" class="quantity-required-label">6</label>
+                            </div>
+                            <div class="in-inventory-wrapper"><label>In inventory: </label><input class="in-inventory" type="text" size="4" /></div>
+                        </div>
+                        <div class="product">
+                            <div class="product-name-quantity-wrapper">
+                                <label class="item-name">Chicken</label>
+                                <label data-base-quantity="5" class="quantity-required-label">5</label>
+                            </div>
+                            <div class="in-inventory-wrapper"><label>In inventory: </label><input class="in-inventory" type="text" size="4" /></div>
+                        </div>
+                        <div class="accordion-wrapper level-2">
+                            <div class="product">
+                                <div class="product-name-quantity-wrapper">
+                                    <button class="accordion--child item-name">Premium All-purpose Ingredient</button>
+                                    <label data-base-quantity="2" class="quantity-required-label">2</label>
+                                </div>
+                                <div class="in-inventory-wrapper"><label>In inventory: </label><input class="in-inventory" type="text" size="4" /></div>
+                            </div>
+                            <div class="panel">
+                                <div class="product">
+                                    <div class="product-name-quantity-wrapper">
+                                        <label class="item-name">Beef</label>
+                                        <label data-base-quantity="2" class="quantity-required-label">2</label>
+                                    </div>
+                                    <div class="in-inventory-wrapper"><label>In inventory: </label><input class="in-inventory" type="text" size="4" /></div>
+                                </div>
+                                <div class="product">
+                                    <div class="product-name-quantity-wrapper">
+                                        <label class="item-name">Avocado</label>
+                                        <label data-base-quantity="2" class="quantity-required-label">2</label>
+                                    </div>
+                                    <div class="in-inventory-wrapper"><label>In inventory: </label><input class="in-inventory" type="text" size="4" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-name-quantity-wrapper">
+                                <label class="item-name">Finest Flour</label>
+                                <label data-base-quantity="3" class="quantity-required-label">3</label>
+                            </div>
+                            <div class="in-inventory-wrapper"><label>In inventory: </label><input class="in-inventory" type="text" size="4" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-name-quantity-wrapper">
+                        <label class="item-name">Fish</label>
+                        <input class="quantity-required" type="text" size="4" />
+                    </div>
+                    <div class="in-inventory-wrapper"><label>In inventory: </label><input class="in-inventory" type="text" size="4" /></div>
+                </div>
+                <div class="product">
+                    <div class="product-name-quantity-wrapper">
+                        <label class="item-name">Mango</label>
+                        <input class="quantity-required" type="text" size="4" />
+                    </div>
+                    <div class="in-inventory-wrapper"><label>In inventory: </label><input class="in-inventory" type="text" size="4" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="output">
+        <textarea id="outputText" name="w3review" rows="4" cols="50">
+            Output
+        </textarea>
+    </div>
+
+    <input id="inputField" type="text" size="4" placeholder="Enter text">
+    <button id="submitButton" onclick="submitInput()">Submit</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script>
+        var inputField = document.getElementById('inputField');
+        var submitButton = document.getElementById('submitButton');
+        var outputText = document.getElementById('outputText');
+
+        var socket = io();
+
+        function submitInput() {
+            var inputText = inputField.value;
+            socket.emit('submit', inputText);
+        }
+
+        socket.on('output', function (text) {
+            outputText.textContent = text;
+        });
+    </script>
+
+    <script>
+        function setupAccordionRoot(accordionElements) {
+            accordionElements.forEach(function (accordion) {
+                accordion.addEventListener('click', function () {
+                    this.classList.toggle('active');
+                    var panel = this.nextElementSibling;
+                    panel.style.display = panel.style.display === 'inline-block' ? 'none' : 'inline-block';
+                });
+            });
+        };
+        var accordionRootElements = document.querySelectorAll('.accordion--root');
+        setupAccordionRoot(accordionRootElements);
+
+        function setupAccordionChildren(accordionElements) {
+            accordionElements.forEach(function (accordion) {
+                accordion.addEventListener('click', function () {
+                    this.classList.toggle('active');
+                    var panel = this.parentNode.parentNode.nextElementSibling;
+                    panel.style.display = panel.style.display === 'inline-block' ? 'none' : 'inline-block';
+                });
+            });
+        }
+        var accordionChildElements = document.querySelectorAll('.accordion--child');
+        setupAccordionChildren(accordionChildElements);
+
+        // Add the collapsed state on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            accordionRootElements.forEach(function (accordion) {
+                accordion.classList.add('collapsed');
+                var panel = accordion.nextElementSibling;
+                panel.style.display = 'none';
+            });
+
+            accordionChildElements.forEach(function (accordion) {
+                accordion.classList.add('collapsed');
+                var panel = accordion.parentNode.parentNode.nextElementSibling;
+                panel.style.display = 'none';
+            });
+        });
+    </script>
+
+    <script>
+        // Get the checkbox element
+        var hideInventoryCheckbox = document.getElementById('hideInventoryCheckbox');
+
+        // Add event listener to the checkbox
+        hideInventoryCheckbox.addEventListener('change', function () {
+            var inventoryWrappers = document.getElementsByClassName('in-inventory-wrapper');
+            var displayValue = this.checked ? 'none' : 'inline-block';
+
+            // Set the display value for each inventory wrapper
+            for (var i = 0; i < inventoryWrappers.length; i++) {
+                inventoryWrappers[i].style.display = displayValue;
+            }
+        });
+    </script>
+
+    <script>
+        // Get the input element and all the child labels
+        const input = document.querySelectorAll(".quantity-required");
+        const labels = document.querySelectorAll(".quantity-required-label");
+
+        // Get all the parent elements containing inputs
+        const products = document.querySelectorAll(".product");
+
+        // Loop through each parent element
+        products.forEach(function (product) {
+            // Get the input element and all the child labels within the parent element
+
+            const input = product.querySelector(".quantity-required");
+            const labels = product.querySelectorAll(".labelElement");
+
+            // Add an event listener to the input element within the parent element
+            input.addEventListener("input", function () {
+                // Get the input value and convert it to a number
+                const inputValue = parseInt(input.value) || 1;
+
+                // Loop through each label within the parent element and update the text content
+                labels.forEach(function (label) {
+                    // Get the original label value and convert it to a number
+                    const labelValue = parseInt(label.textContent);
+
+                    // Multiply the label value by the input value
+                    const newValue = labelValue * inputValue;
+
+                    // Update the label text content with the new value
+                    label.textContent = newValue;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

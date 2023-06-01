@@ -24,7 +24,7 @@
   sell_to_vendor: 7000
   cost: 20000
   items:
-    Powerful Magic Core: 5  
+    Powerful Magic Core: 5
     Magic Core: 25
     Fire Spirit Heart: 1
     Magic Craft Tool: 25
@@ -32,7 +32,7 @@
 - name: Spell Book V ATK
   cost: 50000
   items:
-    Legendary Magic Core: 25  
+    Legendary Magic Core: 25
     Powerful Core: 60
     Incarnation Heart: 1
     Magic Craft Tool: 100
